@@ -1,0 +1,20 @@
+<h1>Welcome to the Flight Page!</h1>
+<br>
+<h2>Flights are displayed below with the Airplane callsign the flight belongs to</h2>
+<br><br>
+<h2> Please click on the Flight you wish to view more information about</h2>
+<h4>
+<% @flights.each do |t| %>
+    <li> <%= t.flight_num %> - <%= t.airplane.callsign %> - <%= t.passenger.name %> </li>
+    <% end %> </h4>
+
+
+    <br><br><br>
+    <p>To return to the HomePage click below</p>
+    <br>
+    <a href="./">HomePage</a>
+    
+
+   <br><br><br><br><br>
+   <h3>Thank you for choosing FlightSim.com!</h3>
+   

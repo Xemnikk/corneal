@@ -1,0 +1,31 @@
+<h1>Welcome to the Aircraft Page!</h1>
+<br>
+<h2>Aircrafts are displayed below with a list of passengers</h2>
+<br>
+<h2>Please click on the Aircraft you wish to view more about</h2>
+
+<% @airplanes.each do |a| %>
+    <ol> <li> <a href="/airplanes/<%=a.id%>"><%= a.callsign %></a> </li> </ol>
+    <% end %>
+
+
+
+
+
+
+<br><br><br>
+
+<h1> Create a New Airplane </h1>
+<form method = "POST" action = "/airplanes">
+<label>New Callsign: <input type = "text" name = "callsign"> </label> <br><br>
+<input type = "submit">
+</form>
+<br><br>
+<p>To return to the HomePage click below</p>
+<br>
+<a href="./">HomePage</a>
+
+
+<br><br><br><br><br>
+<h3>Thank you for choosing FlightSim.com!</h3>
+

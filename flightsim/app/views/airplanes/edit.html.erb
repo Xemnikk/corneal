@@ -1,0 +1,16 @@
+<h1>Change Airplane Callsign</h1>
+<br><br>
+<form method="POST" action="/airplanes/<%=@airplane.id%>">
+<input type="hidden" value="patch" name="_method">
+<label>New Callsign: <input type = "text" name = "callsign" value = "<%= @airplane.callsign %>"> </label>
+<input type="submit">
+</form>
+<br><br>
+<p>To return to the HomePage click below</p>
+<br>
+<a href="/">HomePage</a>
+
+
+<br><br><br><br><br>
+<h3>Thank you for choosing FlightSim.com!</h3>
+

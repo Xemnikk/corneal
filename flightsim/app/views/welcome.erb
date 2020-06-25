@@ -1,0 +1,30 @@
+<div class="container">
+  <header><img src="https://cdn.businesstraveller.com/wp-content/uploads/fly-images/989642/Aeroflot-916x516.jpg" class="img-responsive main-image"></header>
+  <div class="col-md-8 col-md-offset-2">
+    <h2>Welcome to Flight Sim!</h2>
+
+    <div class="content">
+      <p> We are your #1 source for flight information. We have the most current flight info including flights, aircrafts, and passengers.</p>
+        <br>
+        <br>
+
+      <a href="/flights">Flights Page</a>
+      <br><br>
+      <a href="/airplanes">Aircrafts Page</a>
+      <br><br>
+      <a href="/passengers">Passengers Page</a>
+      <br><br>
+    </div>
+
+    <div class="sidebar">
+      <h3>Environment</h3>
+      <ul>
+        <li><b>Ruby:</b> <%= RUBY_VERSION %></li>
+        <li><b>Environment:</b> <%= ENV["RACK_ENV"] %></li>
+        <li><b>Server:</b> <%= @env["SERVER_SOFTWARE"] %></li>
+        <li><b>Port:</b> <%= @env["SERVER_PORT"] %></li>
+      </ul>
+    </div>
+
+  </div>
+</div>

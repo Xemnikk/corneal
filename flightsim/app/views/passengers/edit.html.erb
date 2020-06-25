@@ -1,0 +1,16 @@
+<h1>Change Passenger Name</h1>
+<br><br>
+<form method="POST" action="/passengers/<%=@passenger.id%>">
+<input type="hidden" value="patch" name="_method">
+<label>New Name: <input type = "text" name = "name" value = "<%= @passenger.name %>"> </label>
+<input type="submit">
+</form>
+<br><br>
+<p>To return to the HomePage click below</p>
+<br>
+<a href="/">HomePage</a>
+
+
+<br><br><br><br><br>
+<h3>Thank you for choosing FlightSim.com!</h3>
+
